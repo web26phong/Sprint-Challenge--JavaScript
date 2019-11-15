@@ -6,7 +6,12 @@
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
-function consume(a, b, cb){
+
+// function consume(a, b, cb){
+//   return cb(a,b);
+// }
+
+const consume = (a, b, cb) => {
   return cb(a,b);
 }
 
@@ -17,15 +22,27 @@ function consume(a, b, cb){
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add(num1, num2){
+// function add(num1, num2){
+//   return num1+num2;
+// }
+
+const add = (num1, num2) => {
   return num1+num2;
 }
 
-function multiply(num1, num2){
+// function multiply(num1, num2){
+//   return num1*num2;
+// }
+
+const multiply = (num1, num2) => {
   return num1*num2;
 }
 
-function greeting(firstName, lastName){
+// function greeting(firstName, lastName){
+//   return `Hello ${firstName} ${lastName}, nice to meet you!`;
+// }
+
+const greeting = (firstName, lastName) => {
   return `Hello ${firstName} ${lastName}, nice to meet you!`;
 }
 
